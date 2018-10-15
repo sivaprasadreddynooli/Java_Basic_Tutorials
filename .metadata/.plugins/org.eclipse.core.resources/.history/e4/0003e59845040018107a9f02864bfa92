@@ -1,0 +1,28 @@
+package Leetcode_problems;
+
+public class problem_merge_sorted_array_88 {
+	
+	
+	public static void validate(int[] a,int[] b)
+	{
+		
+		int i = m-1;
+		int j = n-1;
+		
+		
+		
+	}
+	
+	
+	public static void main(String args[])
+	{
+		int[] a = {3,6,7,8,9};
+		int[20] b = new int[]; 
+			b = {12,15,16,356,568};
+		
+		validate(a,b);
+		
+		
+	}
+
+}

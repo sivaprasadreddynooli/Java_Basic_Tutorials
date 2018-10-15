@@ -1,0 +1,37 @@
+package Leetcode_problems;
+
+import java.util.*;
+
+public class problem_subsets_78 {
+
+	public  void backtrack(List<List<Integer>> list, List<Integer> templist,int[] a,int start)
+	{
+		list.add(new ArrayList<>(templist));
+		
+		for(int i=0;i<a.length;i++)
+		{
+			templist.add(a[i]);
+			backtrack(list,templist,a,i+1);
+			templist.remove(templist.size()-1);
+		}
+	}
+	
+	
+	public List<List<Integer>> validate(int[] a)
+	{
+		List<List<Integer>> list = new ArrayList<>();
+		Arrays.sort(a);
+		backtrack(list,new ArrayList<>(),a,0);
+		return list;
+	}
+	
+
+	public static void main(String[] args) {
+		int[] a={1,2,4,5,6};
+	
+		problem_subsets_78  l = new problem_subsets_78 ();
+		l.validate(a);
+
+	}
+
+}

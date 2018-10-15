@@ -1,0 +1,10 @@
+package Leetcode_problems;
+
+public class problem_remove_duplicates_from_sorted_array_80 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
